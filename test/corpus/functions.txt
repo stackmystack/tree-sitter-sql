@@ -1172,25 +1172,26 @@ RETURNS int
             (keyword_int)))
         (function_argument
           (identifier)
-            (nvarchar
-              (keyword_nvarchar)
-              (literal))))
+          (nvarchar
+            (keyword_nvarchar)
+            (literal))))
       (keyword_returns)
       (int
         (keyword_int))
       (function_body
         (keyword_as)
         (keyword_begin)
-        (select
-          (keyword_select)
-          (select_expression
-            (term
-              (all_fields))))
-        (from
-          (keyword_from)
-          (relation
-            (object_reference
-              (identifier))))
+        (statement
+          (select
+            (keyword_select)
+            (select_expression
+              (term
+                (all_fields))))
+          (from
+            (keyword_from)
+            (relation
+              (object_reference
+                (identifier)))))
         (keyword_return)
         (field
           (identifier))
@@ -1226,43 +1227,44 @@ RETURNS int
             (keyword_int)))
         (function_argument
           (identifier)
-            (nvarchar
-              (keyword_nvarchar)
-              (literal))))
+          (nvarchar
+            (keyword_nvarchar)
+            (literal))))
       (keyword_returns)
       (int
         (keyword_int))
       (function_body
         (keyword_as)
         (keyword_begin)
-          (var_declarations
-            (keyword_declare)
-            (var_declaration
-              (identifier)
-              (int
-                (keyword_int)))
-            (var_declaration
-              (identifier)
-              (int
-                (keyword_int)))
-            (var_declaration
-              (identifier)
-              (int
-                (keyword_int)))
-            (var_declaration
-              (identifier)
-              (int
-                (keyword_int))))
-        (select
-          (keyword_select)
-          (select_expression
-            (term
-              (all_fields))))
-        (from
-          (keyword_from)
-          (relation
-            (object_reference
-              (identifier))))
+        (var_declarations
+          (keyword_declare)
+          (var_declaration
+            (identifier)
+            (int
+              (keyword_int)))
+          (var_declaration
+            (identifier)
+            (int
+              (keyword_int)))
+          (var_declaration
+            (identifier)
+            (int
+              (keyword_int)))
+          (var_declaration
+            (identifier)
+            (int
+              (keyword_int))))
+        (statement
+          (select
+            (keyword_select)
+            (select_expression
+              (term
+                (all_fields))))
+          (from
+            (keyword_from)
+            (relation
+              (object_reference
+                (identifier)))))
         (keyword_return)
         (field
           (identifier))
@@ -1331,28 +1333,30 @@ RETURNS int
             (int
               (keyword_int))))
         (keyword_begin)
-        (select
-          (keyword_select)
-          (select_expression
-            (term
-              (all_fields))))
-        (from
-          (keyword_from)
-          (relation
-            (object_reference
-              (identifier))))
+        (statement
+          (select
+            (keyword_select)
+            (select_expression
+              (term
+                (all_fields))))
+          (from
+            (keyword_from)
+            (relation
+              (object_reference
+                (identifier)))))
         (keyword_end)
         (keyword_begin)
-        (select
-          (keyword_select)
-          (select_expression
-            (term
-              (all_fields))))
-        (from
-          (keyword_from)
-          (relation
-            (object_reference
-              (identifier))))
+        (statement
+          (select
+            (keyword_select)
+            (select_expression
+              (term
+                (all_fields))))
+          (from
+            (keyword_from)
+            (relation
+              (object_reference
+                (identifier)))))
         (keyword_end)
         (keyword_return)
         (field
